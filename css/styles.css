@@ -145,6 +145,9 @@ ul {
     url(../images/bg-hero.jpg);
   background-size: cover;
   background-color: rgba(46, 47, 66, 0.7);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title-hero {
   max-width: 496px;
@@ -204,7 +207,9 @@ ul {
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
-  padding: 24px 100px 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Секция What are we doing*/
@@ -383,7 +388,7 @@ ul {
 .social-media-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(16 / 24);
+  line-height: calc(24 / 16);
   color: var(--footer-text);
   margin-bottom: 16px;
 }
@@ -411,6 +416,8 @@ ul {
 .button-portfolio:focus {
   background-color: var(--hover-focus-color);
   color: var(--title-hero-button);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .title-of-img-portfolio {
   font-weight: 500;
@@ -442,11 +449,16 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.text-portfolio-box:hover,
-.text-portfolio-box:focus {
+.hov-foc-portfolio-img:hover,
+.hov-foc-portfolio-img:focus {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  display: block;
+  text-decoration: none;
+}
+.hov-foc-portfolio-img {
+  text-decoration: none;
 }
 .section-portfolio {
   padding-bottom: 120px;
